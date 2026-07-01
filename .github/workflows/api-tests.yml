@@ -27,7 +27,7 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Docker Compose
         run: |
@@ -45,14 +45,14 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
-          cache-dependency-path: tests/postman/package-lock.json
+          cache-dependency-path: tests/package-lock.json
       
       - name: Install Newman and dependencies
-        working-directory: tests/postman
+        working-directory: tests
         run: npm install
       
       - name: Run API tests
-        working-directory: tests/postman
+        working-directory: tests
         run: |
 
           docker compose up -d
