@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
       - name: events-service
-       .... тут
+        .... тут
 ---
 apiVersion: v1
 kind: Service
@@ -37,5 +37,5 @@ metadata:
     app.kubernetes.io/name: {{ include "cinemaabyss.name" . }}
     app.kubernetes.io/instance: {{ .Release.Name }}
 spec:
- ........ и тут
+    ........ и тут
 {{- end }}
