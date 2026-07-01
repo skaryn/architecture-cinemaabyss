@@ -1,0 +1,23 @@
+{
+  "name": "events-service",
+  "version": "1.0.0",
+  "description": "MVP Events Service with Kafka for CinemaAbyss",
+  "main": "index.js",
+  "author": "Александр Кудрявцев",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "kafkajs": "^2.2.4",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
